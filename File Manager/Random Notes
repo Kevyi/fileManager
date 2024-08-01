@@ -1,0 +1,81 @@
+Tkinter Comprehension Guide
+
+    Keep in mind that everything are objects which are inside other objects, Window --> Frame --> layout --> widgets.
+    from tkinte import * means to import everything
+Widgets 
+-graphical compoenents with individual attributes and methods.
+-use layout managers like pack(),grid(),place() to determine position and size on frame.
+
+    pack(): Packs widgets into the available space.
+    grid(): Places widgets in a grid with rows and columns.
+    place(): Places widgets at an absolute position.
+
+
+Frame
+-can hold other widgets
+
+Buttons/commands:
+-Remember to do a lambda just like an arrow function in javascript. We have to invoke a function to call a function, not outright call the function on boot.
+
+
+Images
+-image_og = Image.open("location")
+-image_tk = ImageTk.PhotoImage(image_og)
+Then add it as an attributive tag to a widget.
+
+
+
+
+
+.tag_has(tagName[, iid])
+Called with one argument, this method returns a list of the iid values for all items that carry tag tagName. If you provide an iid as the second argument, the method returns True if the item with that iid has tag tagName, False otherwise.
+
+https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/ttk-Treeview.html
+
+w.bind(sequence=None, func=None, add=None)
+This method is used to attach an event binding to a widget. See Section 54, “Events” for the overview of event bindings.
+
+The sequence argument describes what event we expect, and the func argument is a function to be called when that event happens to the widget. If there was already a binding for that event for this widget, normally the old callback is replaced with func, but you can preserve both callbacks by passing add='+'.
+
+
+https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/universal.html
+
+
+'''
+            Get the text of the item whose Id is stored in `my_iid`.
+            text = treeview.item(my_iid, option="text")
+
+            Change the text of an item.
+            treeview.item(my_iid, text="New text")
+            '''
+            
+            #Things to do: 
+            #   Checks if file has JSON object in file, if not, insert an empty treeView with empty json in JSON file.
+            #       If inside, insert id with the tags and stuff.
+            #      Convert tags to a set and use .contains to figure if contains tag.     
+
+                #Unsure how to access data JSON object, if in one objects or multiple objects
+                #https://stackoverflow.com/questions/3794268/command-for-clicking-on-the-items-of-a-tkinter-treeview-widget
+
+#Notes of what needs to be implemented:
+    """
+        Update file by overwriting json file that was already made for the file when file was initially detected.
+        Use unique identifier to associate file, which is the file's name to find file.
+        File should also be deleted if not there anymore, check if location is valid.
+        Tags should go through every file and everyone of its tag to UPDATE interface to show file.
+            If tag search bar is empty, show every file.
+
+
+            For Treeview
+            https://pythonassets.com/posts/treeview-in-tk-tkinter/
+
+            https://github.com/TomSchimansky/CustomTkinter/discussions/524
+        https://builtin.com/data-science/python-list-files-in-directory
+        "https://www.geeksforgeeks.org/how-to-merge-multiple-json-files-using-python/"
+        "https://stackoverflow.com/questions/13949637/how-to-update-json-file-with-python"
+
+
+
+        Empty String for tag so it can be selected?
+
+    """
