@@ -1,6 +1,6 @@
 # TagFile Manager
 A tag-based file managing system for everyday use (file attributes stored in JSON). Created with Python using its various libraries and modules.
-Easy to use system meant for people who have loads of diverse files on their desktops. This manager uses knowledge of fileName, the only condition is NO periods in names. Please use dashes.
+Easy to use system meant for people who have loads of diverse files on their desktops. This manager uses knowledge of fileName, the only condition is -------**NO periods**------- in names. Please use dashes.
 (Feedback Appreciated!)
 
 
