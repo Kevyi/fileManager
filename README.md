@@ -20,6 +20,14 @@ Easy to use system meant for people who have loads of diverse files on their des
 
 -Double-click on a file to launch it.
 
+# Before
+
+![image](https://github.com/user-attachments/assets/6f317ac0-2100-4192-8862-6a67c7c65b38)
+
+
+# After
+
+![image](https://github.com/user-attachments/assets/0ece3c46-b316-40a5-9ad8-9f8e43c39b26)
 
 
 
