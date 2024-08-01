@@ -78,7 +78,7 @@ class interface():
                 data.update({
                     fileName : {
                         "name" : fileName,
-                        "tags" : [fileName.split(".")[1].lower()],  #Add "" to everything so when search "" it finds it.
+                        "tags" : [fileName.split(".")[1].lower()] if "." in fileName else [],  #Add "" to everything so when search "" it finds it.
                         "description" : "N/A",
                         "image" : self.imageType(fileName)
                     }
@@ -144,7 +144,8 @@ class interface():
                    
     def imageType(self, fileName):
         #Gets the type of file (ex. pdf, txt, jpg, etc.)
-        type = fileName.split(".")[1].lower()
+
+        type = fileName.split(".")[1].lower() if fileName in "," else None
 
         #Returns location of image to show or show type representation.
             #If find out how to get preview image of files, implement and remove this.
