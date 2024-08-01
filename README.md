@@ -1,12 +1,12 @@
 # TagFile Manager
 A tag-based file managing system for everyday use (file attributes stored in JSON). Created with Python using its various libraries and modules.
-Easy to use system meant for people who have loads of diverse files on their desktops.
+Easy to use system meant for people who have loads of diverse files on their desktops. 
 (Feedback Appreciated!)
 
 
 **HOW TO USE**
 
--Simply download the File Manager file and put your files in the "Files" folder.
+-Simply download the File Manager file and put your files in the "Files" folder (files should NOT have periods within them).
 
 -Download the required libraries for use (custom tkinter and PIL).
 
